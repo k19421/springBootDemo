@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    #选择环境sit1对应的配置文件即为application-sit1.yml
+    active: dev
+
+#mybatis:
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
