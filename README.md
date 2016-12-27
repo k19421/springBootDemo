@@ -6,6 +6,7 @@
     <artifactId>spring-boot-starter-data-redis</artifactId>
 </dependency>
 ```
+
 2、 在resources/application.yml中配置redis的连接信息（如果不配是去连接localhost:6379的redis）
 ```
 spring:
@@ -13,6 +14,7 @@ spring:
     host: localhost
     port: 6379
 ```
+
 3、 写代码
 ```java
 @Autowired
@@ -23,4 +25,5 @@ public void run(String... strings) throws Exception {
 	System.out.println("get key from redis:" + stringStringValueOperations.get("test.key"));
 }
 ```
+
 4、 运行连接redis成功
